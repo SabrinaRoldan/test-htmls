@@ -1,0 +1,109 @@
+.contacto{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "comunicacion formulario"
+    ;
+}
+
+.comunicacion{
+    grid-area: comunicacion;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+    gap: 10px;
+}
+
+.infoContacto{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    img{
+        width: 50px;
+        height: 50px;
+        grid-column: 1/2;
+        justify-self: right;
+        align-self: center;
+    }
+    p{
+        font-size: 30px;
+        grid-column: 2/3;
+        font-family: $font-family;
+        justify-self: left;
+        align-self: center;
+        span{
+            font-weight: bold;
+        }
+        background-color: $background-color-text;
+        border-radius: $border-radious-text;
+        padding: $background-color-padding;
+    }
+    iframe{
+        grid-column: 2/3;
+        border-style: double;
+        justify-self: left;
+        align-self: center;
+    }
+}
+
+.formBody{
+    display: column;
+    gap: 10px;
+    border-style: none;
+}
+
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    legend{
+        font-size: 30px;
+        font-weight: bolder;
+        font-family: $font-family;
+        justify-self: center;
+        align-self: center;
+    }
+    p{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 20px;
+        font-family: $font-family;
+        text-align: right;
+    }
+}
+
+.infoFormulario{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: repeat(2,1fr);
+    margin-bottom: 10px;
+    span{
+        font-size: 25px;
+        font-weight: bold;
+        font-family: $font-family;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: left;
+        align-self: center;
+    }
+    input{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 20px;
+        font-family: $font-family;
+        justify-self: left;
+        align-self: center;
+        width: 100%;
+    }
+}
+
+.submitButtom{
+    grid-column: 1/2;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: $font-family;
+    width: 100px;
+}

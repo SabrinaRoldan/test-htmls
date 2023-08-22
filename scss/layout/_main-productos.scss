@@ -1,0 +1,79 @@
+.productos{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "productosLinks"
+    "compraVenta"
+    "tallerLectura"
+    "tallerEscritura" 
+    "otrosIdiomas";
+    gap: 1.875rem;
+}
+
+.productosLinks{
+    grid-area: productosLinks;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top: 3.125rem;
+    margin-bottom: 12.5rem;
+}
+
+.compraVenta{
+    grid-area: compraVenta;
+    @include productosGridsAreas;
+    img{
+        @include productosImg;
+    }
+    h2{
+        @include productosH2;
+    }
+    p{
+        @include productosP;
+    }
+}
+
+.tallerLectura{
+    grid-area: tallerLectura;
+    @include productosGridsAreas;
+    img{
+        @include productosImg;
+    }
+    h2{
+        @include productosH2;
+    }
+    p{
+        @include productosP;
+    }
+}
+
+.tallerEscritura{
+    grid-area: tallerEscritura;
+    @include productosGridsAreas;
+    img{
+        @include productosImg;
+    }
+    h2{
+        @include productosH2;
+    }
+    p{
+        @include productosP;
+    }
+}
+
+.otrosIdiomas{
+    grid-area: otrosIdiomas;
+    @include productosGridsAreas;
+    img{
+        @include productosImg;
+    }
+    h2{
+        @include productosH2;
+    }
+    p{
+        @include productosP;
+    }
+}

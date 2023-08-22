@@ -1,0 +1,1212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-index{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 2fr 9fr .5fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.tituloLogo{
+    display: flex;
+    list-style: none;
+    flex-direction:row;
+    justify-content: left;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    text-shadow: 2px 2px 8px rgb(1, 1, 1);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Inria Serif', serif;
+}
+
+.tituloLogo a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-image: url('../assets/img/Fondo.png');
+    background-size: cover;
+}
+
+header {
+    grid-area: header;
+    margin-top: auto;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: auto;
+}
+
+.tituloSeccion{
+    display: flex;
+    list-style: none;
+    flex-direction:row;
+    justify-content: left;
+    font-size: 25px;
+    position: absolute;
+    top: 0px;
+    right: 70px;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    flex-direction:row;
+    justify-content: left;
+    background-color: rgba(217, 217, 217, 0.716);
+    padding: 25px 20px 25px 20px;
+    /* 
+    1:top
+    2:right
+    3:bottom
+    4:left
+    */
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.menu{
+    color: azure;
+    padding: 2.5rem 1.875rem;
+    text-align: left;
+    font-size: 30px;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #000000;
+    font-family: 'Inria Serif', serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 150px;
+    margin-left: 1.875rem;
+    position:sticky;
+    top: 10px;
+    left: 10px;
+}
+
+header li a:hover{
+    color: rgba(23, 23, 197, 0.674);
+}
+
+.redesSociales{
+    display: flex;
+    list-style: none;
+    flex-direction:row;
+    justify-content:end;
+    background-color: rgba(217, 217, 217, 0.716);
+    padding-top: .3125rem;
+}
+
+.redesSociales p{
+    font-size: 25px;
+    font-style: italic;
+    margin-right: 20px;
+    font-family: 'Inria Serif', serif;
+}
+
+.media img{
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: .625rem;
+}
+
+.media a img:hover{
+    opacity: .5;
+}
+
+/**********************HOME**********************/
+.inicioDePagina{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.h1Index{
+    grid-column: 1/4;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+/**********************PRODUCTOS**********************/
+.productos{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "productosLinks"
+    "compraVenta"
+    "tallerLectura"
+    "tallerEscritura" 
+    "otrosIdiomas"
+    ;
+    gap: 30px;
+}
+
+.productosLinks{
+    grid-area: productosLinks;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top: 3.125rem;
+    margin-bottom: 12.5rem;
+}
+
+.compraVenta{
+    grid-area: compraVenta;
+    display: grid;
+    grid-template-rows: .5fr 10fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.tallerLectura{
+    grid-area: tallerLectura;
+    display: grid;
+    grid-template-rows: .5fr 10fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.tallerEscritura{
+    grid-area: tallerEscritura;
+    display: grid;
+    grid-template-rows: .5fr 10fr;
+    grid-template-columns: 2fr 1fr;   
+}
+
+.otrosIdiomas{
+    grid-area: otrosIdiomas;
+    display: grid;
+    grid-template-rows: .5fr 10fr;
+    grid-template-columns: 2fr 1fr;   
+}
+
+.compraVenta img{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 640px;
+    height: 427px;
+    border-radius: 0px 40px 60px 80px;
+    justify-self: center;
+    align-self: center;
+    border-width: 10px;
+    border-style: groove;
+    border-color: rgb(64, 227, 214);
+}
+
+.compraVenta h2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Inria Serif', serif;
+    justify-self: bottom;
+    align-self: center;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.compraVenta p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: 'Inria Serif', serif;
+    margin-left: 6.25rem;
+    margin-right: 3.125rem;
+    align-self: center;
+}
+
+.tallerLectura img{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 640px;
+    height: 427px;
+    border-radius: 0px 40px 60px 80px;
+    justify-self: center;
+    align-self: center;
+    border-width: 10px;
+    border-style: groove;
+    border-color: rgb(64, 227, 214);
+}
+
+.tallerLectura h2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Inria Serif', serif;
+    justify-self: bottom;
+    align-self: center;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.tallerLectura p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: 'Inria Serif', serif;
+    margin-left: 6.25rem;
+    margin-right: 3.125rem;
+    align-self: center;
+}
+
+.tallerEscritura img{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 640px;
+    height: 427px;
+    border-radius: 0px 40px 60px 80px;
+    justify-self: center;
+    align-self: center;
+    border-width: 10px;
+    border-style: groove;
+    border-color: rgb(64, 227, 214);
+}
+
+.tallerEscritura h2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Inria Serif', serif;
+    justify-self: bottom;
+    align-self: center;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.tallerEscritura p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: 'Inria Serif', serif;
+    margin-left: 6.25rem;
+    margin-right: 3.125rem;
+    align-self: center;
+}
+
+.otrosIdiomas img{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 640px;
+    height: 427px;
+    border-radius: 0px 40px 60px 80px;
+    justify-self: center;
+    align-self: center;
+    border-width: 10px;
+    border-style: groove;
+    border-color: rgb(64, 227, 214);
+}
+
+.otrosIdiomas h2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Inria Serif', serif;
+    justify-self: bottom;
+    align-self: center;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.otrosIdiomas p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: 'Inria Serif', serif;
+    margin-left: 6.25rem;
+    margin-right: 3.125rem;
+    align-self: center;
+}
+
+/**********************SOBRE NOSOTROS**********************/
+.sobreNosotros{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "foto quienesSomos"
+    "foto nuestraMision"
+    ;
+}
+
+.fotoLibreria{
+    grid-area: foto;
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.fotoLibreria img{
+    image-resolution: 100%;
+    justify-self: right;
+    align-self: right;
+    margin-left: 20px;
+    border-radius: 50%;
+    border-style: groove;
+    border-width: 10px;
+    border-color: rgb(64, 227, 214);
+}
+
+.quienesSomos{
+    grid-area: quienesSomos;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nuestraMision{
+    grid-area: nuestraMision;
+    display: grid;
+    grid-template-rows: 2fr 3fr .5fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sobreNosotros h2{
+    grid-column: 2/3;
+    grid-row: 1,2;
+    justify-self: left;
+    align-self: center;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Inria Serif', serif;
+}
+
+.sobreNosotros p{
+    grid-column: 2/3;
+    grid-row: 2,3;
+    font-size: 20px;
+    font-family: 'Inria Serif', serif;
+    align-self: center;
+}
+
+/**********************NUESTROS CLIENTES**********************/
+.nuestrosClientes{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkParrafo{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-bottom: 10px;
+}
+
+.checkParrafo img{
+    width: 40px;
+    height: 40px;
+    justify-self: right;
+    align-self: center;
+    grid-column: 1/2;
+    margin-right: 10px;
+}
+
+.checkParrafo p{
+    grid-column: 2/3;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Inria Serif', serif;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.checkParrafo span{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Inria Serif', serif;
+    font-size: 20px;
+    justify-self: right;
+    text-align: right;
+}
+
+/**********************CONTACTO**********************/
+.contacto{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-areas: 
+    "comunicacion formulario"
+    ;
+}
+
+.comunicacion{
+    grid-area: comunicacion;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+    gap: 10px;
+}
+
+.infoContacto{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+.infoContacto img{
+    width: 50px;
+    height: 50px;
+    grid-column: 1/2;
+    justify-self: right;
+    align-self: center;
+}
+
+.infoContacto p{
+    font-size: 30px;
+    grid-column: 2/3;
+    font-family: 'Inria Serif', serif;
+    justify-self: left;
+    align-self: center;
+}
+
+.infoContacto p span{
+    font-weight: bold;
+}
+
+.infoContacto iframe{
+    grid-column: 2/3;
+    border-style: double;
+    justify-self: left;
+    align-self: center;
+}
+
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.formBody{
+    display: column;
+    gap: 10px;
+    border-style: none;
+}
+
+.formulario legend{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Inria Serif', serif;
+    justify-self: center;
+    align-self: center;
+}
+
+.infoFormulario{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: repeat(2,1fr);
+    margin-bottom: 10px;
+}
+
+.infoFormulario span{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Inria Serif', serif;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: left;
+    align-self: center;
+}
+
+.infoFormulario input{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 20px;
+    font-family: 'Inria Serif', serif;
+    justify-self: left;
+    align-self: center;
+    width: 100%;
+}
+
+.formulario p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 20px;
+    font-family: 'Inria Serif', serif;
+    text-align: right;
+}
+
+.submitButtom{
+    grid-column: 1/2;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Inria Serif', serif;
+    width: 100px;
+}
+
+/**********************RESPONSIVE 1024 GENERAL**********************/
+@media(max-width:1024px){
+    .tituloLogo{
+        top: 50px;
+        left: 140px;
+        font-size: 35px;
+    }
+
+    .logo{
+        width: 100px;
+        margin-left: 1.875rem;
+        margin-top: 10px;
+        left: 10px;
+    }
+
+    .tituloSeccion{
+        font-size: 15px;
+        top: 10px;
+        right: 50px;
+    }
+
+    .navbar{
+        background-color: rgba(217, 217, 217, 0.716);
+        padding: 20px 15px 20px 15px;
+        /* 
+        1:top
+        2:right
+        3:bottom
+        4:left
+        */
+        top: 50px;
+        right: 0px;
+    }
+
+    .menu{
+        color: rgb(0, 0, 0);
+        padding: 30px 20px;
+        font-size: 20px;
+        text-shadow: 2px 2px 8px #000000;
+    }
+
+/**********************RESPONSIVE 1024: HOME**********************/
+
+    .h1Index{
+        font-size: 75px;
+    }
+
+/**********************RESPONSIVE 1024: PRODUCTOS**********************/
+
+    .productosLinks{
+        margin-top: 4.6875rem;
+        margin-bottom: 15.625rem;
+    }
+
+    .compraVenta img{
+        opacity: .0;
+    }
+
+    .compraVenta h2{
+        font-size: 20px;
+    }
+
+    .compraVenta p{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .tallerLectura img{
+        opacity: .0;
+    }
+
+    .tallerLectura h2{
+        font-size: 20px;
+    }
+
+    .tallerLectura p{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .tallerEscritura img{
+        opacity: .0;
+    }
+
+    .tallerEscritura h2{
+        font-size: 20px;
+    }
+
+    .tallerEscritura p{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .otrosIdiomas img{
+        opacity: .0;
+    }
+
+    .otrosIdiomas h2{
+        font-size: 20px;
+    }
+
+    .otrosIdiomas p{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+/**********************RESPONSIVE 1024: SOBRE NOSOTROS**********************/   
+
+    .sobreNosotros{
+        grid-template-areas: 
+        "foto quienesSomos"
+        "nuestraMision nuestraMision"
+        ;
+    }
+
+    .fotoLibreria{
+        grid-area: foto;
+    }
+
+    .fotoLibreria img{
+        width: 25rem;
+    }
+
+    .quienesSomos{
+        grid-area: quienesSomos;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+
+    .nuestraMision{
+        grid-area: nuestraMision;
+        display: grid;
+        grid-template-rows: 50px 200px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .sobreNosotros h2{
+        font-size: 40px;
+    }
+
+    .sobreNosotros p{
+        font-size: 20px;
+    }
+
+/**********************RESPONSIVE 1024: CONTACTO**********************/  
+    .infoContacto img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .infoContacto p{
+        font-size: 20px;
+    }
+
+    .infoContacto iframe{
+        width: 18.75rem;
+        height: 15.625rem;
+    }
+
+    .formulario legend{
+        font-size: 25px;
+    }
+
+    .infoFormulario span{
+        font-size: 20px;
+    }
+
+    .infoFormulario input{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .formulario p{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .submitButtom{
+        font-size: 18px;
+        width: 80px;
+    }
+}
+
+/**********************RESPONSIVE 768 GENERAL**********************/
+@media(max-width:768px){
+    .tituloLogo{
+        top: 35px;
+        left: 120px;
+        font-size: 30px;
+    }
+
+    .logo{
+        width: 80px;
+        margin-left: 1.875rem;
+        margin-top: 10px;
+        left: 10px;
+    }
+
+    .tituloSeccion{
+        font-size: 13px;
+        top: 15px;
+        right: 40px;
+    }
+
+    .navbar{
+        background-color: rgba(217, 217, 217, 0.716);
+        padding: 15px 10px 15px 10px;
+        /* 
+        1:top
+        2:right
+        3:bottom
+        4:left
+        */
+        top: 118px;
+    }
+
+    .menu{
+        color: rgb(0, 0, 0);
+        padding: 30px 20px;
+        font-size: 15px;
+        text-shadow: 2px 2px 8px #000000;
+    }
+
+/**********************RESPONSIVE 768: HOME**********************/
+
+    .h1Index{
+        font-size: 60px;
+    }
+
+/**********************RESPONSIVE 768: PRODUCTOS**********************/
+
+    .productosLinks{
+        margin-top: 4.6875rem;
+        margin-bottom: 15.625rem;
+    }
+
+    .compraVenta img{
+        opacity: .0;
+    }
+
+    .compraVenta h2{
+        font-size: 20px;
+        grid-column: 1/3;
+    }
+
+    .compraVenta p{
+        grid-column: 1/3;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .tallerLectura img{
+        opacity: .0;
+    }
+
+    .tallerLectura h2{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .tallerLectura p{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .tallerEscritura img{
+        opacity: .0;
+    }
+
+    .tallerEscritura h2{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .tallerEscritura p{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .otrosIdiomas img{
+        opacity: .0;
+    }
+
+    .otrosIdiomas h2{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+    .otrosIdiomas p{
+        grid-column: 1/3;
+        font-size: 20px;
+    }
+
+/**********************RESPONSIVE 768: SOBRE NOSOTROS**********************/   
+
+    .sobreNosotros{
+        grid-template-areas: 
+        "foto quienesSomos"
+        "nuestraMision nuestraMision"
+        ;
+    }
+
+    .fotoLibreria{
+        grid-area: foto;
+    }
+
+    .fotoLibreria img{
+        width: 18.75rem;
+    }
+
+    .quienesSomos{
+        grid-area: quienesSomos;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+
+    .nuestraMision{
+        grid-area: nuestraMision;
+        display: grid;
+        grid-template-rows: 60px 200px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .sobreNosotros h2{
+        font-size: 30px;
+    }
+
+    .sobreNosotros p{
+        font-size: 18px;
+    }
+
+/**********************RESPONSIVE 768: CONTACTO**********************/  
+    .contacto{
+        margin-top: 50px;
+    }
+
+    .infoContacto img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .infoContacto p{
+        font-size: 20px;
+    }
+
+    .infoContacto iframe{
+        width: 15.625rem;
+        height: 12.5rem;
+    }
+
+    .formulario legend{
+        font-size: 25px;
+    }
+
+    .infoFormulario span{
+        font-size: 20px;
+    }
+
+    .infoFormulario input{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .formulario p{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .submitButtom{
+        font-size: 18px;
+        width: 80px;
+    }
+}
+
+/**********************RESPONSIVE 320 GENERAL**********************/
+@media(max-width:320px){
+    .tituloLogo{
+        top: 70px;
+        left: 75px;
+        font-size: 20px;
+    }
+
+    .logo{
+        width: 60px;
+        margin-left: 10px;
+        left: 10px;
+    }
+
+    .tituloSeccion{
+        font-size: 10px;
+        top: 15px;
+        right: 10px;
+    }
+
+.navbar{
+    display: flex;
+    list-style: none;
+    flex-direction:column;
+    justify-content: left;
+    background-color: rgba(217, 217, 217, 0.716);
+    padding: 0px 0px 0px 0px;
+    /* 
+    1:top
+    2:right
+    3:bottom
+    4:left
+    */
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.menu{
+    color: rgb(0, 0, 0);
+    padding: 1.25rem 1.25rem;
+    text-align: left;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #000000;
+    font-family: 'Inria Serif', serif;
+}
+
+.redesSociales p{
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.media img{
+    width: 15px;
+    height: 15px;
+    margin-right: .625rem;
+}
+
+/**********************RESPONSIVE 320: HOME**********************/
+
+    .h1Index{
+        font-size: 30px;
+    }
+
+/**********************RESPONSIVE 320: PRODUCTOS**********************/
+
+    .productosLinks{
+        grid-area: productosLinks;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.25rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        margin-top: 3.125rem;
+        margin-bottom: 12.5rem;
+    }
+
+    .compraVenta img{
+        opacity: .0;
+    }
+
+    .compraVenta h2{
+        font-size: 10px;
+        grid-column: 1/3;
+    }
+
+    .compraVenta p{
+        grid-column: 1/3;
+        font-size: 10px;
+        margin-right: 20px;
+    }
+
+    .tallerLectura img{
+        opacity: .0;
+    }
+
+    .tallerLectura h2{
+        grid-column: 1/3;
+        font-size: 10px;
+    }
+
+    .tallerLectura p{
+        grid-column: 1/3;
+        font-size: 10px;
+    }
+
+    .tallerEscritura img{
+        opacity: .0;
+    }
+
+    .tallerEscritura h2{
+        grid-column: 1/3;
+        font-size: 10px;
+    }
+
+    .tallerEscritura p{
+        grid-column: 1/3;
+        font-size: 10px;
+    }
+
+    .otrosIdiomas img{
+        opacity: .0;
+    }
+
+    .otrosIdiomas h2{
+        grid-column: 1/3;
+        font-size: 10px;
+    }
+
+    .otrosIdiomas p{
+        grid-column: 1/3;
+        font-size: 10px;
+    }
+
+/**********************RESPONSIVE 320: SOBRE NOSOTROS**********************/   
+
+    .sobreNosotros{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "quienesSomos"
+        "foto"
+        "nuestraMision"
+        ;
+    }
+
+    .fotoLibreria{
+        grid-area: foto;
+    }
+
+    .fotoLibreria img{
+        width: 300px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .quienesSomos{
+        grid-area: quienesSomos;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+
+    .nuestraMision{
+        grid-area: nuestraMision;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .sobreNosotros h2{
+        font-size: 20px;
+    }
+
+    .sobreNosotros p{
+        font-size: 13px;
+    }
+
+/**********************RESPONSIVE 320: CONTACTO**********************/  
+    .contacto{
+        margin-top: 50px;
+    }
+
+    .infoContacto img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .infoContacto p{
+        font-size: 20px;
+    }
+
+    .infoContacto iframe{
+        width: 15.625rem;
+        height: 12.5rem;
+    }
+
+    .formulario legend{
+        font-size: 25px;
+    }
+
+    .infoFormulario span{
+        font-size: 20px;
+    }
+
+    .infoFormulario input{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .formulario p{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+
+    .submitButtom{
+        font-size: 18px;
+        width: 80px;
+    }
+}

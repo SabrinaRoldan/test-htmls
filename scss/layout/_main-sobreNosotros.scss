@@ -1,0 +1,58 @@
+.sobreNosotros{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "foto quienesSomos"
+    "foto nuestraMision"
+    ;
+    h2{
+        grid-column: 2/3;
+        grid-row: 1,2;
+        justify-self: left;
+        align-self: center;
+        font-size: 50px;
+        font-style: italic;
+        font-family: $font-family;
+    }
+    p{
+        grid-column: 2/3;
+        grid-row: 2,3;
+        font-size: 20px;
+        font-family: $font-family;
+        align-self: center;
+        background-color: $background-color-text;
+        border-radius: $border-radious-text;
+        padding: $background-color-padding;
+    }
+}
+
+.fotoLibreria{
+    grid-area: foto;
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    justify-self: center;
+    align-self: center;
+    img{
+        image-resolution: 100%;
+        justify-self: right;
+        align-self: right;
+        margin-left: 1.25rem;
+        border-radius: 50%;
+        border-style: groove;
+        border-width: .625rem;
+        border-color: $border-color-img;
+    }
+}
+
+.quienesSomos{
+    grid-area: quienesSomos;
+    @include sobreNosotrosPropiedades;
+}
+
+.nuestraMision{
+    grid-area: nuestraMision;
+    @include sobreNosotrosPropiedades;
+    margin-bottom: 20px;
+}

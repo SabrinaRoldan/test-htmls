@@ -1,0 +1,73 @@
+header{
+    display: flex;
+    flex-direction: row;
+    grid-area: header;
+    margin-top: auto;
+    margin-bottom: 3.125rem;
+    li{
+        a{
+            &:hover{
+                color: rgba(23, 23, 197, 0.674);
+            }
+        }
+    }
+}
+
+.logo{
+    width: 9.375rem;
+    margin-left: 1.875rem;
+    position:sticky;
+    margin-top: 2.1875rem;
+    left: .625rem;
+}
+
+.tituloLogo {
+    display: flex;
+    list-style: none;
+    flex-direction:row;
+    justify-content: left;
+    position: absolute;
+    top: 3.125rem;
+    left: 11.25rem;
+    text-shadow: $menu-text-shadow;
+    font-size: 3.125rem;
+    font-weight: bold;
+    font-family: $font-family;
+    a {
+    text-decoration: none;
+    color: black;
+    }
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    flex-direction:row;
+    justify-content: left;
+    background-color: $color-menues;
+    padding: 1.5625rem 1.25rem 1.5625rem 1.25rem;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.menu{
+    color: azure;
+    padding: 2.5rem 1.875rem;
+    text-align: left;
+    font-size: 30px;
+    text-decoration: none;
+    text-shadow: $menu-text-shadow;
+    font-family: $font-family;
+}
+
+.tituloSeccion{
+    display: flex;
+    list-style: none;
+    flex-direction:row;
+    justify-content: left;
+    font-size: 25px;
+    position: absolute;
+    top: 0px;
+    right: 70px;
+}

@@ -1,0 +1,33 @@
+/*****************************Variables, mixings y Funciones*****************************/
+@import "./base/reset";
+@import "./base/typo";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+/*****************************Código*****************************/
+/*Body*/
+@import "./layout/body";
+/*Header*/
+@import "./layout/header";
+@import "./layout/main-index";
+
+/*Main General*/
+@import "./layout/main";
+
+/*Main Home*/
+@import "./layout/main-index";
+
+/*Main Productos*/
+@import "./layout/main-productos";
+
+/*Main Sobre Nosotros*/
+@import "./layout/main-sobreNosotros";
+
+/*Main Nuestros Clientes*/
+@import "./layout/main-nuestrosClientes";
+
+/*Main Contacto*/
+@import "./layout/main-contacto";
+
+/*Footer*/
+@import "./layout/footer";

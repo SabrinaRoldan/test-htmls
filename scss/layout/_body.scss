@@ -1,0 +1,16 @@
+.grid-index{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 2fr 9fr .5fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+body{
+    background-image: url('../assets/img/Fondo.png');
+    background-size: cover;
+}

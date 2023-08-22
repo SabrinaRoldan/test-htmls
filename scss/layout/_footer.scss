@@ -1,0 +1,33 @@
+footer {
+    grid-area: footer;
+    margin-top: auto;
+}
+
+.redesSociales{
+    display: flex;
+    list-style: none;
+    flex-direction:row;
+    justify-content:end;
+    background-color: $color-menues;
+    padding-top: .3125rem;
+    p{
+        font-size: 1.5625rem;
+        font-style: italic;
+        margin-right: 1.25rem;
+        font-family: $font-family;
+    }
+}
+
+.media{
+    a{
+        img{
+            width: 1.875rem;
+            height: 1.875rem;
+            margin-right: .625rem;
+            &:hover{
+                opacity: .5;
+            }
+            }
+        
+    }
+}
