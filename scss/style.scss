@@ -7,9 +7,9 @@
 /*****************************Código*****************************/
 /*Body*/
 @import "./layout/body";
+
 /*Header*/
 @import "./layout/header";
-@import "./layout/main-index";
 
 /*Main General*/
 @import "./layout/main";
@@ -31,3 +31,13 @@
 
 /*Footer*/
 @import "./layout/footer";
+
+/*****************************Responsive*****************************/
+/*1024*/
+@import "./layout/mediaQuery/media1024";
+
+/*768*/
+@import "./layout/mediaQuery/media768";
+
+/*320*/
+@import "./layout/mediaQuery/media320";

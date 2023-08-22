@@ -1,0 +1,196 @@
+/****************************General 1024****************************/
+@media(max-width:1024px){
+    .tituloLogo{
+        top: 2.5rem;
+        left: 8.125rem;
+        font-size: 35px;
+    }
+
+    .logo{
+        width: 100px;
+        margin-left: 1.875rem;
+        margin-top: 1.875rem;
+        left: 10px;
+    }
+
+    .tituloSeccion{
+        font-size: $font-size-p1024;
+        top: 10px;
+        right: 50px;
+    }
+
+    .navbar{
+        padding: 1.25rem .9375rem 1.25rem .9375rem;
+        top: 50px;
+        right: 0px;
+    }
+
+    .menu{
+        padding: 30px 20px;
+        font-size: 20px;
+    }
+
+
+/****************************Index 1024****************************/
+    .inicioDePagina{
+        h1{
+            font-size: 75px;
+        }
+    }
+
+/****************************Productos 1024****************************/
+    .productosLinks{
+        margin-top: 4.6875rem;
+        margin-bottom: 15.625rem;
+    }
+
+    .compraVenta{
+        @include productosGridsAreas1024;
+        img{
+            @include productosImg1024;
+        }
+        h2{
+            @include productosH21024;
+        }
+        p{
+            @include productosP1024;
+        }
+    }
+
+    .tallerLectura{
+        @include productosGridsAreas1024;
+        img{
+            @include productosImg1024;
+        }
+        h2{
+            @include productosH21024;
+        }
+        p{
+            @include productosP1024;
+        }
+    }
+
+    .tallerEscritura{
+        @include productosGridsAreas1024;
+        img{
+            @include productosImg1024;
+        }
+        h2{
+            @include productosH21024;
+        }
+        p{
+            @include productosP1024;
+        }
+    }
+
+    .otrosIdiomas{
+        @include productosGridsAreas1024;
+        img{
+            @include productosImg1024;
+        }
+        h2{
+            @include productosH21024;
+        }
+        p{
+            @include productosP1024;
+        }
+    }
+
+/****************************Sobre Nosotros 1024****************************/
+    .sobreNosotros{
+        grid-template-areas: 
+        "foto quienesSomos"
+        "nuestraMision nuestraMision"
+        ;
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: $font-size-p1024;
+        }
+    }
+
+    .fotoLibreria{
+        grid-area: foto;
+        img{
+            width: 25rem;
+        }
+    }
+
+    .quienesSomos{
+        grid-area: quienesSomos;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        gap: .625rem;
+        margin-top: 1.25rem;
+        margin-right: 1.875rem;
+    }
+
+    .nuestraMision{
+        grid-area: nuestraMision;
+        display: grid;
+        grid-template-rows: 3.125rem 12.5rem;
+        grid-template-columns: 1fr;
+        gap: 3.125rem;
+        margin-top: 5rem;
+        margin-bottom: 0rem;
+        margin-right: 1.875rem;
+        margin-left: 1.875rem;
+    }
+
+/****************************Nuestros Clientes 1024****************************/
+    .checkParrafo{
+        p{
+            font-size: $font-size-p1024;
+        }
+        span{
+            font-size: $font-size-p1024;
+        }
+    }
+
+/****************************Contacto 1024****************************/
+    .infoContacto {
+        img{
+        width: 40px;
+        height: 40px;
+        }
+        p{
+        font-size: $font-size-p1024;
+        }
+        iframe{
+        width: 18.75rem;
+        height: 15.625rem;
+        }
+    }
+
+    .formulario {
+        legend{
+        font-size: 25px;
+        }
+        p{
+            font-size: $font-size-p1024;
+        }
+    }
+
+    .infoFormulario{
+        span{
+            font-size: $font-size-p1024;
+        }
+        input{
+            font-size: $font-size-p1024;
+        }
+    }
+
+    .submitButtom{
+        font-size: $font-size-p1024;
+        width: 5rem;
+    }
+
+/****************************Footer 1024****************************/
+    .redesSociales{
+        p{
+            font-size: $font-size-p1024;
+        }
+    }
+}

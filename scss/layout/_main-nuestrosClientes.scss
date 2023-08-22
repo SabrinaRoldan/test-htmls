@@ -7,9 +7,10 @@
 
 .checkParrafo{
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr .1fr;
     grid-template-columns: 1fr 5fr 1fr;
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
+    gap: .3125rem;
     img{
         width: 40px;
         height: 40px;
@@ -20,7 +21,7 @@
     }
     p{
         grid-column: 2/3;
-        font-size: 20px;
+        font-size: $font-size-p;
         text-align: left;
         font-family: $font-family;
         background-color: $background-color-text;
@@ -37,8 +38,8 @@
         font-family: $font-family;
         background-color: $background-color-text;
         border-radius: $border-radious-text;
-        font-size: 20px;
+        font-size: $font-size-p;
         justify-self: right;
-        text-align: right;
+        align-self: center;
     }
 }

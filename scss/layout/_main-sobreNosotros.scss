@@ -18,7 +18,7 @@
     p{
         grid-column: 2/3;
         grid-row: 2,3;
-        font-size: 20px;
+        font-size: $font-size-p;
         font-family: $font-family;
         align-self: center;
         background-color: $background-color-text;

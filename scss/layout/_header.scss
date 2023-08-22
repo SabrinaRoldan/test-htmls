@@ -66,8 +66,10 @@ header{
     list-style: none;
     flex-direction:row;
     justify-content: left;
-    font-size: 25px;
+    font-size: $font-size-p;
+    font-style: italic;
     position: absolute;
     top: 0px;
     right: 70px;
+    font-family: $font-family;
 }

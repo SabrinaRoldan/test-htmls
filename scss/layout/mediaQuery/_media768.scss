@@ -1,0 +1,215 @@
+/****************************General 768****************************/
+@media(max-width:768px){
+    .tituloLogo{
+        top: 2.1875rem;
+        left: 7.5rem;
+        font-size: 1.875rem;
+    }
+
+    .logo{
+        width: 5rem;
+        margin-left: 1.875rem;
+        margin-top: 1.875rem;
+        left: .625rem;
+    }
+
+    .tituloSeccion{
+        font-size: $font-size-p768;
+        top: 5rem;
+        right: 2.5rem;
+    }
+
+    .navbar{
+        padding: .9375rem .625rem .9375rem .625rem;
+        top: 7.375rem;
+    }
+
+    .menu{
+        padding: 1.875rem 1.25rem;
+        font-size: 1.25rem;
+    }
+
+
+/****************************Index 768****************************/
+    .inicioDePagina{
+        h1{
+            font-size: 3.75rem;
+        }
+    }
+
+/****************************Productos 768****************************/
+    .productos{
+        gap: .625rem;
+    }
+
+    .productosLinks{
+        grid-area: productosLinks;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4,1fr);
+        gap: .625rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        margin-top: 1.875rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .productosLinks{
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .compraVenta{
+        @include productosGridsAreas768;
+        img{
+            @include productosImg768;
+        }
+        h2{
+            @include productosH2768;
+        }
+        p{
+            @include productosP768;
+        }
+    }
+
+    .tallerLectura{
+        @include productosGridsAreas768;
+        img{
+            @include productosImg768;
+        }
+        h2{
+            @include productosH2768;
+        }
+        p{
+            @include productosP768;
+        }
+    }
+
+    .tallerEscritura{
+        @include productosGridsAreas768;
+        img{
+            @include productosImg768;
+        }
+        h2{
+            @include productosH2768;
+        }
+        p{
+            @include productosP768;
+        }
+    }
+
+    .otrosIdiomas{
+        @include productosGridsAreas768;
+        img{
+            @include productosImg768;
+        }
+        h2{
+            @include productosH2768;
+        }
+        p{
+            @include productosP768;
+        }
+    }
+
+/****************************Sobre Nosotros 768****************************/
+    .sobreNosotros{
+        grid-template-areas: 
+        "foto quienesSomos"
+        "nuestraMision nuestraMision"
+        ;
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: $font-size-p768;
+        }
+    }
+
+    .fotoLibreria{
+        grid-area: foto;
+        img{
+            width: 18.75rem;
+        }
+    }
+
+    .quienesSomos{
+        grid-area: quienesSomos;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;
+        gap: .625rem;
+        margin-top: 1.25rem;
+        margin-right: 1.875rem;
+    }
+
+    .nuestraMision{
+        grid-area: nuestraMision;
+        display: grid;
+        grid-template-rows: 3.125rem 12.5rem;
+        grid-template-columns: 1fr;
+        gap: .625rem;
+        margin-top: 5rem;
+        margin-bottom: 0rem;
+        margin-right: 1.875rem;
+        margin-left: 1.875rem;
+    }
+
+/****************************Nuestros Clientes 768****************************/
+    .checkParrafo{
+        p{
+            font-size: $font-size-p768;
+        }
+        span{
+            font-size: $font-size-p768;
+        }
+    }
+
+/****************************Contacto 768****************************/
+    .contacto{
+        margin-top: 50px;
+    }
+
+    .infoContacto {
+        img{
+        width: 40px;
+        height: 40px;
+        }
+        p{
+        font-size: $font-size-p768;
+        }
+        iframe{
+        width: 18.75rem;
+        height: 15.625rem;
+        }
+    }
+
+    .formulario {
+        legend{
+        font-size: 25px;
+        }
+        p{
+            font-size: $font-size-p768;
+        }
+    }
+
+    .infoFormulario{
+        span{
+            font-size: $font-size-p768;
+        }
+        input{
+            font-size: $font-size-p768;
+        }
+    }
+
+    .submitButtom{
+        font-size: $font-size-p768;
+        width: 5rem;
+    }
+
+/****************************Footer 768****************************/
+    .redesSociales{
+        p{
+            font-size: $font-size-p1024;
+        }
+    }
+}

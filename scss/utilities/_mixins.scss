@@ -34,7 +34,7 @@
     grid-column: 1/2;
     grid-row: 2/3;
     font-weight: lighter;
-    font-size: 1.5625rem;
+    font-size: $font-size-p;
     font-family: $font-family;
     margin-left: 6.25rem;
     margin-right: 3.125rem;
@@ -51,4 +51,84 @@
     grid-template-columns: 1fr 10fr 1fr;
     gap: 10px;
     margin-top: 20px;
+}
+
+/************************************ Productos 1024 ************************************/
+@mixin productosGridsAreas1024{
+    display: grid;
+    grid-template-rows: .5fr 10fr;
+    grid-template-columns: 1fr;
+}
+
+@mixin productosImg1024{
+    display: none;
+}
+
+@mixin productosH21024{
+    grid-column: 1/3;
+    font-size: 1.5625rem;
+}
+
+@mixin productosP1024{
+    grid-column: 1/3;
+    font-size: $font-size-p1024;
+}
+
+/************************************ Productos 768 ************************************/
+@mixin productosGridsAreas768{
+    display: grid;
+    grid-template-rows: .5fr 10fr;
+    grid-template-columns: 1fr;
+}
+
+@mixin productosImg768{
+    display: none;
+}
+
+@mixin productosH2768{
+    font-size: 1.25rem;
+}
+
+@mixin productosP768{
+    grid-column: 1/3;
+    font-size: $font-size-p768;
+}
+
+/************************************ Productos 320 ************************************/
+@mixin productosGridsAreas320{
+    display: grid;
+    grid-template-rows: .1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+@mixin productosImg320{
+    display: none;
+}
+
+@mixin productosH2320{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left: .125rem;
+    margin-right: .125rem;
+    margin-top: .625rem;
+}
+
+@mixin productosP320{
+    grid-column: 1/3;
+    font-size: $font-size-p320;
+    margin-left: .125rem;
+    margin-right: .125rem;
+    margin-top: .625rem;
+}
+
+/************************************ Sobre Nosotros 320 ************************************/
+@mixin sobreNosotrosPropiedades320{
+    display: grid;
+    grid-template-rows: .1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: .3125rem;
+    margin-right: .625rem;
+    margin-left: .625rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }

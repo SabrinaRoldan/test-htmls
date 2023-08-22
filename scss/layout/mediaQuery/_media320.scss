@@ -1,0 +1,307 @@
+/****************************General 320****************************/
+@media(max-width:320px){
+    .tituloLogo{
+        top: 1.25rem;
+        left: 5rem;
+        font-size: 1.5625rem;
+    }
+
+    .logo{
+        width: 3.75rem;
+        margin-left: 1.25rem;
+        margin-top: 1.5625rem;
+        left: .625rem;
+    }
+
+    .tituloSeccion{
+        font-size: $font-size-p320;
+        top: 5.625rem;
+        right: .625rem;
+    }
+
+    .navbar{
+        padding: .625rem .3125rem .625rem .3125rem;
+        top: 7.375rem;
+    }
+
+    .menu{
+        padding: .3125rem .1875rem;
+        font-size: .625rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+/****************************Index 320****************************/
+    .inicioDePagina{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+
+/****************************Productos 320****************************/
+    .productos{
+        display: grid;
+        grid-template-rows: 2fr repeat(4,0.5fr);
+        grid-template-areas: 
+        "productosLinks"
+        "compraVenta"
+        "tallerLectura"
+        "tallerEscritura" 
+        "otrosIdiomas";
+        gap: .625rem;
+    }
+
+    .productosLinks{
+        grid-area: productosLinks;
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 12.5rem;
+        justify-content: center;
+        gap: .625rem;
+        margin-left: .3125rem;
+        margin-right: .3125rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .compraVenta{
+        @include productosGridsAreas320;
+        img{
+            @include productosImg320;
+            display: none;
+        }
+        h2{
+            @include productosH2320;
+        }
+        p{
+            @include productosP320;
+        }
+    }
+
+    .tallerLectura{
+        @include productosGridsAreas320;
+        img{
+            @include productosImg320;
+        }
+        h2{
+            @include productosH2320;
+        }
+        p{
+            @include productosP320;
+        }
+    }
+
+    .tallerEscritura{
+        @include productosGridsAreas320;
+        img{
+            @include productosImg320;
+        }
+        h2{
+            @include productosH2320;
+        }
+        p{
+            @include productosP320;
+        }
+    }
+
+    .otrosIdiomas{
+        @include productosGridsAreas320;
+        img{
+            @include productosImg320;
+        }
+        h2{
+            @include productosH2320;
+        }
+        p{
+            @include productosP320;
+        }
+    }
+
+/****************************Sobre Nosotros 320****************************/
+    .sobreNosotros{
+        display: grid;
+        grid-template-rows: 1fr .5fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "quienesSomos"
+        "foto"
+        "nuestraMision"
+        ;
+        margin-top: 5rem;
+        justify-content: center;
+    }
+
+    .fotoLibreria{
+        gap: 0rem;
+        margin-top: 0rem;
+        place-items: center;
+        img{
+            width: 18.75rem;
+            border-radius: 10%;
+            margin-left: 0rem;
+        }
+    }
+
+    .quienesSomos{
+        grid-area: quienesSomos;
+        @include sobreNosotrosPropiedades320;
+    }
+
+    .nuestraMision{
+        grid-area: nuestraMision;
+        @include sobreNosotrosPropiedades320;
+    }
+
+/****************************Nuestros Clientes 320****************************/
+    .nuestrosClientes{
+        display: grid;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: 1fr;
+        gap: .3125rem;
+    }
+ 
+    .checkParrafo{
+        img{
+            width: 1.875rem;
+            height: 1.875rem;
+        }
+        p{
+            font-size: $font-size-p320;
+        }
+        span{
+            font-size: $font-size-p320;
+        }
+    }
+
+/****************************Contacto 320****************************/
+    .contacto{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "comunicacion"
+        "formulario"
+        ;
+    }
+
+    .comunicacion{
+        gap: .3125rem;
+    }
+
+    .infoContacto{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+        margin-bottom: 1.875rem;
+        img{
+            width: 2.5rem;
+            height: 2.5rem;
+            grid-column: 1/2;
+            justify-self: right;
+            align-self: center;
+        }
+        p{
+            font-size: $font-size-p320;
+            grid-column: 2/3;
+            font-family: $font-family;
+            justify-self: left;
+            align-self: center;
+            span{
+                font-weight: bold;
+            }
+            background-color: $background-color-text;
+            border-radius: $border-radious-text;
+            padding: $background-color-padding;
+        }
+        iframe{
+            grid-column: 1/3;
+            border-style: double;
+            justify-self: center;
+            align-self: center;
+            width: 18.75rem;
+            height: 18.75rem;
+        }
+    }
+
+    .formBody{
+        display: column;
+        gap: .3125rem;
+        border-style: none;
+    }
+
+    .formulario{
+        grid-area: formulario;
+        display: grid;
+        gap: .3125rem;
+        margin-left: .625rem;
+        margin-right: .625rem;
+        legend{
+            font-size: 1.25rem;
+            font-weight: bolder;
+            font-family: $font-family;
+            justify-self: center;
+            align-self: center;
+        }
+        p{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            font-size: $font-size-p320;
+            font-family: $font-family;
+            text-align: right;
+        }
+    }
+
+    .infoFormulario{
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: repeat(2,1fr);
+        margin-bottom: .3125rem;
+        span{
+            font-size: 1.125rem;
+            font-weight: bold;
+            font-family: $font-family;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: left;
+            align-self: center;
+        }
+        input{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            font-size: $font-size-p320;
+            font-family: $font-family;
+            justify-self: left;
+            align-self: center;
+            width: 100%;
+        }
+    }
+
+    .submitButtom{
+        grid-column: 1/2;
+        font-size: $font-size-p320;
+        font-weight: bolder;
+        font-family: $font-family;
+        width: 100px;
+    }
+
+/****************************Footer 320****************************/
+    .redesSociales{
+        p{
+            font-size: .9375rem;
+        }
+    }
+
+    .media{
+        a{
+            img{
+                width: 1.25rem;
+                height: 1.25rem;
+                margin-right: .625rem;
+                }
+        }
+    }
+}

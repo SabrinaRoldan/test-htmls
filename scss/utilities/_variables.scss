@@ -2,7 +2,7 @@
 
 $color-menues: lightcoral;
 
-$menu-text-shadow: .125rem .125rem .5rem #000000;
+$menu-text-shadow: .125rem .125rem .5rem white;
 
 $font-family: 'Inria Serif', serif;
 
@@ -11,3 +11,9 @@ $background-color-text: rgba(255, 255, 255, 0.705);
 $background-color-padding: 1.25rem 1.25rem 1.25rem 1.25rem;
 
 $border-color-img: rgb(64, 227, 214);
+
+/*Font Size*/
+$font-size-p: 1.5625rem;
+$font-size-p1024: 1.25rem;
+$font-size-p768: .9375rem;
+$font-size-p320: .625rem;
