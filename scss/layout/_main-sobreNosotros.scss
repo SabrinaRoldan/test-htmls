@@ -47,12 +47,22 @@
 }
 
 .quienesSomos{
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nuestraMision{
+    @extend .quienesSomos;
+}
+
+.quienesSomos{
     grid-area: quienesSomos;
-    @include sobreNosotrosPropiedades;
 }
 
 .nuestraMision{
     grid-area: nuestraMision;
-    @include sobreNosotrosPropiedades;
     margin-bottom: 20px;
 }

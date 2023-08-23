@@ -339,21 +339,18 @@ main {
     border-width: .625rem;
     border-color: #40e3d6; }
 
-.quienesSomos {
-  grid-area: quienesSomos;
+.quienesSomos, .nuestraMision {
   display: grid;
   grid-template-rows: 2fr 3fr;
   grid-template-columns: 1fr 10fr 1fr;
   gap: 10px;
   margin-top: 20px; }
 
+.quienesSomos, .nuestraMision {
+  grid-area: quienesSomos; }
+
 .nuestraMision {
   grid-area: nuestraMision;
-  display: grid;
-  grid-template-rows: 2fr 3fr;
-  grid-template-columns: 1fr 10fr 1fr;
-  gap: 10px;
-  margin-top: 20px;
   margin-bottom: 20px; }
 
 /*Main Nuestros Clientes*/
@@ -607,7 +604,7 @@ footer {
     grid-area: foto; }
     .fotoLibreria img {
       width: 25rem; }
-  .quienesSomos {
+  .quienesSomos, .nuestraMision {
     grid-area: quienesSomos;
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -750,7 +747,7 @@ footer {
     grid-area: foto; }
     .fotoLibreria img {
       width: 18.75rem; }
-  .quienesSomos {
+  .quienesSomos, .nuestraMision {
     grid-area: quienesSomos;
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -934,7 +931,7 @@ footer {
       width: 18.75rem;
       border-radius: 10%;
       margin-left: 0rem; }
-  .quienesSomos {
+  .quienesSomos, .nuestraMision {
     grid-area: quienesSomos;
     display: grid;
     grid-template-rows: .1fr 1fr;
